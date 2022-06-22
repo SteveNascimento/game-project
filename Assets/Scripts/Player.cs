@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float Speed;
     public float JumpForce;
     public bool isJumping;
+    public bool isDeath;
     public bool doubleJumping;
 
     private Rigidbody2D rig;
@@ -24,8 +25,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
-        Jump();
+        if (!isDeath)
+        {
+            Move();
+            Jump();
+        }
     }
 
     void Move ()
@@ -75,6 +79,12 @@ public class Player : MonoBehaviour
             isJumping = false;
             anim.SetBool("jump", false);
         }
+        if (collision.gameObject.tag == "Spike")
+        {
+            isDeath = true;
+            anim.SetTrigger("death");
+            Invoke("GameOver", 1);
+        }
     }
     
     void OnCollisionExit2D(Collision2D collision) {
@@ -82,5 +92,10 @@ public class Player : MonoBehaviour
         {
             isJumping = true; 
         }
+    }
+
+    void GameOver() {
+        Destroy(gameObject);
+        GameController.instance.ShowGameOver();
     }
 }
