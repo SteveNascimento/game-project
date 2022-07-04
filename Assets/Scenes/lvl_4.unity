@@ -263,7 +263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Resposta 1
+  m_text: "Rota\xE7\xE3o"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -348,8 +348,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 804718552}
     m_Modifications:
     - target: {fileID: 6614952952756518951, guid: deed6cfe74359384cbe898b23adc5ad3, type: 3}
+      propertyPath: correto
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614952952756518951, guid: deed6cfe74359384cbe898b23adc5ad3, type: 3}
       propertyPath: lvl_name
-      value: lvl_1
+      value: lvl_5
       objectReference: {fileID: 0}
     - target: {fileID: 7572939088962628706, guid: deed6cfe74359384cbe898b23adc5ad3, type: 3}
       propertyPath: m_Name
@@ -459,7 +463,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Resposta 2
+  m_text: "Transla\xE7\xE3o"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -706,8 +710,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00047827, y: 133.74612}
-  m_SizeDelta: {x: 1067, y: 111.508}
+  m_AnchoredPosition: {x: 0.001, y: 133.74612}
+  m_SizeDelta: {x: 829.198, y: 111.508}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &287365304
 MonoBehaviour:
@@ -729,7 +733,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pergunta 2
+  m_text: "Os principais par\xE2metros de instanciamento utilizados em Computa\xE7\xE3o
+    Gr\xE1fica s\xE3o as chamadas Transforma\xE7\xF5es Geom\xE9tricas. A Transforma\xE7\xE3o
+    geom\xE9trica que define a posi\xE7\xE3o do modelo no Universo \xE9:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -756,8 +762,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5072,11 +5078,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6614952952756518951, guid: deed6cfe74359384cbe898b23adc5ad3, type: 3}
       propertyPath: correto
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6614952952756518951, guid: deed6cfe74359384cbe898b23adc5ad3, type: 3}
       propertyPath: lvl_name
-      value: lvl_1
+      value: lvl_5
       objectReference: {fileID: 0}
     - target: {fileID: 6614952952756518951, guid: deed6cfe74359384cbe898b23adc5ad3, type: 3}
       propertyPath: collected
@@ -5648,6 +5654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalScore: 0
   scoreText: {fileID: 938303014}
+  firstFase: 0
   win: {fileID: 17370213}
   lost: {fileID: 3024597948277137708}
   gameOver: {fileID: 1312338506}
