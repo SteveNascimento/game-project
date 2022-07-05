@@ -85,6 +85,10 @@ public class Player : MonoBehaviour
             anim.SetTrigger("death");
             Invoke("GameOver", 1);
         }
+        if (collision.gameObject.tag == "Final")
+        {
+            isDeath = true;
+        }
     }
     
     void OnCollisionExit2D(Collision2D collision) {

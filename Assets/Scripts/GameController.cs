@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public bool firstFase;
     
     public GameObject win;
+    public GameObject final;
     public GameObject lost;
     public GameObject gameOver;
 
@@ -46,6 +47,11 @@ public class GameController : MonoBehaviour
     public void ShowWin()
     {
         win.SetActive(true);
+    }
+    
+    public void ShowFinally()
+    {
+        final.SetActive(true);
     }
     
     public void ShowLost()
